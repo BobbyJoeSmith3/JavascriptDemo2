@@ -1,0 +1,35 @@
+div {
+  width: 300px;
+  height: 200px;
+  margin: 30px;
+  border: 2px dashed black;
+}
+
+button {
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 90px;
+  border: 1px solid crimson;
+}
+
+#moveableDiv {
+  transition: transform 1s;
+}
+
+#moveableDiv:hover {
+  transform: translateX(200px);
+}
+
+#animateableDiv {
+  /* animation: quickAnimation 3s linear 3 alternate forwards; */
+  /* animation-play-state: paused; */
+}
+
+@keyframes quickAnimation {
+  from {
+
+  }
+  to {
+    transform: scale(2) rotate(30deg);
+  }
+}
